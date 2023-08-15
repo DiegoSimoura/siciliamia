@@ -5,10 +5,13 @@
   left: 0;
 }
 .frameChild {
+  position: absolute;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-  width: 90em;
   height: 4.69em;
+  width: 159.6vw;
+  transform: translateX(-50%);
+  min-width: none;
 }
 .vectorIcon {
   height: 100%;
@@ -65,7 +68,7 @@
   position: relative;
   width: 0.6em;
   height: 1.32em;
-  overflow: hidden;
+  overflow:visible;
   flex-shrink: 0;
 }
 .frame1,
@@ -179,6 +182,7 @@
   background-position: top;
 }
 .nav {
+  position: absolute;
   top: 0.06em;
   left: 3.31em;
   width: 84.44em;
@@ -909,7 +913,7 @@
   font-size: 1.38em;
   line-height: 144%;
   display: inline-block;
-  width: 7.27em;
+  width: 8em;
   height: 1em;
 }
 .rectangleParent7 {
@@ -1102,7 +1106,7 @@
   font-size: 1.38em;
   line-height: 144%;
   display: inline-block;
-  width: 11.36em;
+  width: 12em;
   height: 1em;
 }
 .cardBest1 {
@@ -1121,7 +1125,7 @@
   font-size: 1.38em;
   line-height: 144%;
   display: inline-block;
-  width: 10.55em;
+  width: 11em;
   height: 1em;
 }
 .cardBest2 {
@@ -1203,20 +1207,22 @@
   height: 0.68em;
 }
 .sicilysTunaFishingContainer {
-  position: absolute;
-  top: 9.94em;
-  left: calc(50% - 640px);
+  position: relative;
+  width: 18em;
+  left: 1em;
+  top: 9.7em;
   font-size: 2.25em;
   letter-spacing: 0.01em;
   font-weight: 600;
   color: #fff;
 }
 .imageParent {
-  position: absolute;
+  position: relative;
   top: 8.5em;
   left: 3.5em;
   width: 83em;
   height: 29.13em;
+  justify-self: center;
 }
 .tonnarotiMattanzaFavignanaTIcon {
   position: absolute;
@@ -1430,6 +1436,7 @@
   overflow: hidden;
 }
 .intersectIcon1 {
+  display: none;
   position: relative;
   width: 1.69em;
   height: 1.69em;
@@ -1543,11 +1550,11 @@
 }
 .services {
   position: absolute;
-  height: 42.92%;
+  height: 45.92%;
   width: 9.03%;
   top: 14.15%;
   right: 51.04%;
-  bottom: 42.92%;
+  bottom: 45.92%;
   left: 39.93%;
   overflow: hidden;
 }
@@ -2013,7 +2020,7 @@
 }
 .topAttractionIn {
   height: 6.68%;
-  width: 28.8%;
+  width: 29.8%;
   top: 0;
   left: 35.64%;
   font-size: 2.25em;
@@ -2702,7 +2709,7 @@
 .rectangleParent {
   position: relative;
   width: 100%;
-  height: 436.94em;
+  height: 4em;
   text-align: left;
   color: #eb6e13;
   font-family: Lato;

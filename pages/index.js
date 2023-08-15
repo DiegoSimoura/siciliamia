@@ -1,51 +1,51 @@
-import { useCallback } from "react";
-import "antd/dist/antd.min.css";
-import { Select } from "antd";
-import styles from "./index.module.css";
+import { useCallback } from 'react';
+import 'antd/dist/antd.min.css';
+import { Select } from 'antd';
+import styles from './index.module.css';
 const FrameComponent = () => {
   const onHowToGetClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='howToGet']");
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
   }, []);
 
   const onHistoryClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='historyText']");
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
   }, []);
 
   const onDidYouKnow1Click = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='didYouKnow']");
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
   }, []);
 
   const onWhatsHotClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='whatsHotText']");
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
   }, []);
 
   const onPopularAttractionNearbyClick = useCallback(() => {
     const anchor = document.querySelector(
-      "[data-scroll-to='popularExperiencesContainer']"
+      "[data-scroll-to='popularExperiencesContainer']",
     );
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
   }, []);
 
   const onQuickFactsClick = useCallback(() => {
     const anchor = document.querySelector(
-      "[data-scroll-to='quickFactsContainer']"
+      "[data-scroll-to='quickFactsContainer']",
     );
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
   }, []);
 
@@ -78,7 +78,7 @@ const FrameComponent = () => {
           </div>
           <Select
             className={styles.itaParent}
-            style={{ width: "52px" }}
+            style={{ width: '52px' }}
             size="middle"
             placeholder="Eng"
             bordered={false}
@@ -927,7 +927,7 @@ const FrameComponent = () => {
           <img className={styles.imageIcon6} alt="" src="/image5@2x.png" />
           <b className={styles.losAngeles5}>Viri Ku C’e</b>
           <b className={styles.losAngeles6}>
-            {" "}
+            {' '}
             Via Riviera Lanterna, 29, Scoglitti, Vittoria RG
           </b>
           <b className={styles.losAngeles7}> +39 0932 980016</b>
@@ -938,7 +938,7 @@ const FrameComponent = () => {
           <img className={styles.imageIcon6} alt="" src="/image6@2x.png" />
           <b className={styles.losAngeles8}>Trattoria Piccolo Napoli</b>
           <b className={styles.losAngeles6}>
-            {" "}
+            {' '}
             Piazzetta Mulino a Vento, 4, 90139 Palermo
           </b>
           <b className={styles.losAngeles7}>+39 091 320431</b>
@@ -964,34 +964,36 @@ const FrameComponent = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628680.2024463795!2d11.290085486603738!3d37.12853388165145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13106268d05359b3%3A0x10b042967b67d50!2sSicily%2C%20Italy!5e0!3m2!1sen!2sbr!4v1691414527681!5m2!1sen!2sbr"
         />
       </div>
-      <div className={styles.whatDoYou}>
-        What do you think about the article?
+      <div className="voteContainer">
+        <div className={styles.whatDoYou}>
+          What do you think about the article?
+        </div>
+        <button className={styles.rate1}>
+          <div className={styles.rate1Child} />
+          <b className={styles.loveIt}>Love it</b>
+        </button>
+        <button className={styles.rate2}>
+          <div className={styles.rate2Child} />
+          <b className={styles.loveIt}>Useful</b>
+        </button>
+        <button className={styles.rate3}>
+          <div className={styles.rate3Child} />
+          <b className={styles.loveIt}>Want to find out more</b>
+        </button>
+        <button className={styles.rate4}>
+          <div className={styles.rate4Child} />
+          <b className={styles.loveIt}>Not my cup of tea</b>
+        </button>
+        <button className={styles.rate41}>
+          <div className={styles.rate4Item} />
+          <b className={styles.loveIt}>Didn’t get it</b>
+        </button>
+        <img className={styles.icon1} alt="" src="/20210304-4-1@2x.png" />
+        <div className={styles.illustrationsLikeThese}>
+          Illustrations like these
+        </div>
+        <img className={styles.frameChild50} alt="" src="/vector-3.svg" />
       </div>
-      <button className={styles.rate1}>
-        <div className={styles.rate1Child} />
-        <b className={styles.loveIt}>Love it</b>
-      </button>
-      <button className={styles.rate2}>
-        <div className={styles.rate2Child} />
-        <b className={styles.loveIt}>Useful</b>
-      </button>
-      <button className={styles.rate3}>
-        <div className={styles.rate3Child} />
-        <b className={styles.loveIt}>Want to find out more</b>
-      </button>
-      <button className={styles.rate4}>
-        <div className={styles.rate4Child} />
-        <b className={styles.loveIt}>Not my cup of tea</b>
-      </button>
-      <button className={styles.rate41}>
-        <div className={styles.rate4Item} />
-        <b className={styles.loveIt}>Didn’t get it</b>
-      </button>
-      <img className={styles.icon1} alt="" src="/20210304-4-1@2x.png" />
-      <div className={styles.illustrationsLikeThese}>
-        Illustrations like these
-      </div>
-      <img className={styles.frameChild50} alt="" src="/vector-3.svg" />
     </div>
   );
 };
